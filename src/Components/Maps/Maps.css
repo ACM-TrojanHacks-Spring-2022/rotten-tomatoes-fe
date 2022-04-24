@@ -1,0 +1,8 @@
+.Maps {
+    display: flex;
+    flex-direction: column;
+}
+
+.Maps-heading {
+    font-size: 2em;
+}

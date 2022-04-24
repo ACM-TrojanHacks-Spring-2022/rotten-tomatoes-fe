@@ -18,13 +18,13 @@
   }
    
   .arrow__path {
-    stroke: rgb(30, 137, 169);
+    stroke: #10063c;
     fill: transparent;
-    stroke-width: 3px;
-    /* stroke-dasharray: 4 2; */
+    stroke-width: 4px;
+    stroke-dasharray: 4 2;
   }
    
   .arrow__head line {
-    stroke: rgb(30, 137, 169);
-    stroke-width: 3px;
+    stroke: #f56709;
+    stroke-width: 5px;
   }

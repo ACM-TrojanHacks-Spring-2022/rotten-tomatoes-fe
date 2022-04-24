@@ -5,7 +5,7 @@ import Arrow, { DIRECTION } from 'react-arrows';
 import Button from '../Button/Button';
 
 const Prediction = (props) => {
-  const { setPageNumber } = props;
+  const { setPageNumber, predictionCode } = props;
 
   return (
     <div className="Prediction">
@@ -57,9 +57,11 @@ const Prediction = (props) => {
           width: '80%',
           alignSelf: 'center',
           marginBottom: '2em',
-          border: '1px solid black',
           fontSize: '2em',
           borderRadius: '1em',
+          backgroundColor: predictionCode === 1 ? 'black' : 'grey',
+          color: 'white',
+          padding: '0.2em',
         }}
       >
         Fresh Produce 🌿
@@ -70,9 +72,11 @@ const Prediction = (props) => {
           width: '80%',
           alignSelf: 'center',
           marginBottom: '2em',
-          border: '1px solid black',
           fontSize: '2em',
           borderRadius: '1em',
+          backgroundColor: predictionCode === 2 ? 'black' : 'grey',
+          color: 'white',
+          padding: '0.2em',
         }}
       >
         Ripe Produce 🍅
@@ -83,9 +87,11 @@ const Prediction = (props) => {
           width: '80%',
           alignSelf: 'center',
           marginBottom: '2em',
-          border: '1px solid black',
           fontSize: '2em',
           borderRadius: '1em',
+          backgroundColor: predictionCode === 3 ? 'black' : 'grey',
+          color: 'white',
+          padding: '0.2em',
         }}
       >
         Spoiled 🤢
@@ -96,21 +102,29 @@ const Prediction = (props) => {
           width: '80%',
           alignSelf: 'center',
           marginBottom: '2em',
-          border: '1px solid black',
           fontSize: '2em',
           borderRadius: '1em',
+          backgroundColor: predictionCode === 4 ? 'black' : 'grey',
+          color: 'white',
+          padding: '0.2em',
         }}
       >
         Rotten ☠️
       </div>
+      {predictionCode === 1 && (
+      <span className="Prediction-heading">
+        {'It\'s fresh!'}
+      </span>
+      )}
       <Button text="Re-scan" onClick={() => setPageNumber(1)} />
-      <Button text="Manage Inventory" onClick={() => setPageNumber(3)} />
+      {predictionCode !== 1 && <Button text="Manage Inventory" onClick={() => setPageNumber(4)} />}
     </div>
   );
 };
 
 Prediction.propTypes = {
   setPageNumber: PropTypes.func.isRequired,
+  predictionCode: PropTypes.number.isRequired,
 };
 
 export default Prediction;
