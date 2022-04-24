@@ -1,0 +1,30 @@
+.Prediction {
+    display: flex;
+    flex-direction: column;
+}
+
+.Prediction-heading {
+    margin-top: 0.5em;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.Prediction-bubble {
+    height: 400px;
+}
+
+.arrow {
+    pointer-events: none;
+  }
+   
+  .arrow__path {
+    stroke: rgb(30, 137, 169);
+    fill: transparent;
+    stroke-width: 3px;
+    /* stroke-dasharray: 4 2; */
+  }
+   
+  .arrow__head line {
+    stroke: rgb(30, 137, 169);
+    stroke-width: 3px;
+  }

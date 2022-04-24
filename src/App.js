@@ -5,7 +5,7 @@ import Summary from './Components/Summary/Summary';
 import WebcamComponent from './Components/Webcam/Webcam';
 
 const App = () => {
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(2);
 
   return (
     <div className="App">

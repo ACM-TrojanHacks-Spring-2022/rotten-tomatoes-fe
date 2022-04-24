@@ -20,5 +20,6 @@ module.exports = {
   rules: {
     'react/function-component-definition': 0,
     'react/jsx-filename-extension': 0,
+    'no-console': 0,
   },
 };
