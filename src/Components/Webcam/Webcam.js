@@ -75,8 +75,8 @@ const WebcamComponent = (props) => {
         videoConstraints={{
           width: 400,
           height: 400,
-          // facingMode: { exact: 'environment' },
-          facingMode: 'user',
+          facingMode: { exact: 'environment' },
+          // facingMode: 'user',
         }}
       />
       {(!startCapturing) && (<Button text="Start Capturing" onClick={() => handleStartCapturing()} />)}

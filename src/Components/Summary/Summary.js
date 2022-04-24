@@ -94,7 +94,7 @@ const Summary = (props) => {
   return (
     <div className="Summary">
       <span className="Summary-heading">
-        Analytics
+        Summary Report
       </span>
       {(pieData.length > 0) && (
       <div className="Summary-pie">
