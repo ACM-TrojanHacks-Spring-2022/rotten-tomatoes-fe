@@ -67,6 +67,9 @@ const WebcamComponent = (props) => {
 
   return (
     <div className="Webcam">
+      <span className="Webcam-heading">
+        SustainbLA
+      </span>
       <Webcam
         audio={false}
         ref={webcamRef}

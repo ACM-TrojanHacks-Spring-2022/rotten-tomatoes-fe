@@ -3,6 +3,13 @@
     flex-direction: column;
 }
 
+.Webcam-heading {
+    margin-top: 0.5em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .Slider {
     padding: 1em;
 }
